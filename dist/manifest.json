@@ -1,0 +1,23 @@
+{
+	"name": "Radar",
+	"short_name": "Radar",
+	"start_url": "https://hungry-chandrasekhar-08909b.netlify.com/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#fff",
+	"theme_color": "#673ab8",
+	"main.js": "bundle.js",
+	"./index.html": "./index.html",
+	"icons": [
+	  {
+	    "src": "-/images/android-chrome-192x192.png",
+	    "type": "image/png",
+	    "sizes": "192x192"
+	  },
+	  {
+	    "src": "-/images/android-chrome-512x512.png",
+	    "type": "image/png",
+	    "sizes": "512x512"
+	  }
+	]
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Radar</title>
+    <meta name="viewport" content=" width=412px">
+    <meta name="Description" content="Author:Paul Belches">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="green">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+  </head>  
+  <body >
+      <script>
+          if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+              navigator.serviceWorker.register('./sWorker.js').then(function(registration) {
+                  // Registration was successful
+                  console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              }, function(err) {
+                  // registration failed :(
+                  console.log('ServiceWorker registration failed: ', err);
+              });
+              });
+          }
+      </script>
+    <div id="root"></div>
+  </body>
+</html>
